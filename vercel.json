@@ -1,7 +1,9 @@
 {
   "rewrites": [
     { "source": "/panel", "destination": "http://194.102.181.219:8796/" },
+    { "source": "/panel/:path*", "destination": "http://194.102.181.219:8796/:path*" },
     { "source": "/api/:path*", "destination": "http://194.102.181.219:8796/api/:path*" },
+    { "source": "/:slug", "destination": "http://194.102.181.219:8796/:slug" },
     { "source": "/:slug/:path*", "destination": "http://194.102.181.219:8796/:slug/:path*" }
   ]
 }
